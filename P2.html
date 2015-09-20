@@ -1,3 +1,13 @@
+<?php
+error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
+ini_set('display_errors', 1); # Display errors on page (instead of a log file)
+?>
+<?php
+phpinfo();
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +19,34 @@
 
 	<link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+	
 
 </head>
 
 <body>
 <container>
+<h1>Jonathan MacLeods Password generator</h1>
+<br>
+<form action="logic.php" method="GET" autocomplete="off">
+	<fieldset>
+		<legend>Password information</legend>
+		How many words?<br>
+		<input type="text" name="numwords">
+		<br>
+		Should it include a number?<br>
+		<input type= "radio" name="numinclude" value="Yes">Yes
+		<br>
+		<input type= "radio" name="numinclude" value="No">No
+		<br>
+		Should it include a special character?<br>
+		<input type= "radio" name="charinclude" value="Yes">Yes
+		<br>
+		<input type= "radio" name="charinclude" value="No">No
+		<input type="submit" value="Submit">
+	</fieldset>
+</form>
 
 </container>
 </body>
 </html>
+		
