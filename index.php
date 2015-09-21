@@ -13,6 +13,15 @@
 
 	<link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.container {
+			width:50%;
+			min-width:600px;
+			margin-bottom:50px;
+			text-align: left;
+			padding: 10px;
+		}
+	</style>
 </head>
 
 <body>
