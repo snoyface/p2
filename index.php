@@ -1,7 +1,4 @@
-<?php
-error_reporting(-1); # Report all PHP errors
-ini_set('display_errors', 1);
-?>
+
 
 <?php require 'logic.php'; ?>
 
@@ -42,7 +39,7 @@ ini_set('display_errors', 1);
 	<p>Your password is: </p> 
     <?php
 	foreach ($passwordNum as $key => $value){
-		echo $value;
+		echo $value . ' ';
 	}
 	?>
 	
