@@ -1,7 +1,6 @@
 <?php
 	//lets create a simple word array
 	$words = array('house','farm','battery','box','member','method','apple','secret','scarf','people');
-	echo $words[0];
 	?>
 
 	

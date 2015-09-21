@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<container>
+<div class = "container">
 	<h1>Jonathan MacLeods Password generator</h1>
 	<br>
 	<form  method="GET" action= "index.php" autocomplete="off">
@@ -53,7 +53,7 @@
 	?>
 	
 
-</container>
+</div>
 </body>
 </html>
 		
