@@ -1,12 +1,9 @@
 <?php
-error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
-ini_set('display_errors', 1); # Display errors on page (instead of a log file)
-?>
-<?php
-phpinfo();
+error_reporting(-1); # Report all PHP errors
+ini_set('display_errors', 1);
 ?>
 
-// <?php require 'logic.php'; ?>
+<?php require 'logic.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -42,29 +39,13 @@ phpinfo();
 		<input type="submit" value="Submit">
 	</form>
 
-    //lets create a simple word array
-	<?php
-	$words = array('house,farm,battery,box,member,method,apple,secret,scarf,people');
-	?>
-
-	//adding the words to the array
-	<?php
-		
-		$passwordNum = array();
-		
-		foreach ($_GET("numwords") as $key => $value){
-			$rWord = rand(0,9);
-			$passwordNum[$value] = $words[$rWord];
-		}
-	?>
-
 	<p>Your password is: </p> 
-	
-	<?php
+    <?php
 	foreach ($passwordNum as $key => $value){
 		echo $value;
 	}
 	?>
+	
 
 </container>
 </body>
