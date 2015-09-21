@@ -6,7 +6,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 phpinfo();
 ?>
 
-
+<?php require 'logic.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -19,19 +19,15 @@ phpinfo();
 
 	<link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-	
-
 </head>
 
 <body>
 <container>
-<h1>Jonathan MacLeods Password generator</h1>
-<br>
-<form action="logic.php" method="GET" autocomplete="off">
-	<fieldset>
-		<legend>Password information</legend>
+	<h1>Jonathan MacLeods Password generator</h1>
+	<br>
+	<form  method="GET" action= "logic.php" autocomplete="off">
 		How many words?<br>
-		<input type="text" name="numwords">
+		<input type="text" name="numwords"> Max 9
 		<br>
 		Should it include a number?<br>
 		<input type= "radio" name="numinclude" value="Yes">Yes
@@ -42,9 +38,17 @@ phpinfo();
 		<input type= "radio" name="charinclude" value="Yes">Yes
 		<br>
 		<input type= "radio" name="charinclude" value="No">No
+		<br>
 		<input type="submit" value="Submit">
-	</fieldset>
-</form>
+	</form>
+
+	<p>Your password is: </p> 
+	
+	<?php
+	foreach ($passwordNum as $key => $value){
+		echo $value;
+	}
+	?>
 
 </container>
 </body>
