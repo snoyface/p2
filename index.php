@@ -51,7 +51,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 	<p>Your password is: </p> 
     <?php
 	foreach ($passwordNum as $key => $value){
-		echo $value . ' ';
+		echo $value . '-';
 	}
 	?>
 	
