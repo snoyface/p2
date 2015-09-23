@@ -24,7 +24,8 @@
 
 <body>
 <div class = "container">
-	<h1>Jonathan MacLeods Password generator</h1>
+	<h1>Jonathan MacLeods </h1>
+	<h1>Password generator</h1>
 	<br>
 	<form  method="GET" action= "index.php" autocomplete="off">
 		How many words?<br>
